@@ -332,8 +332,10 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #eb94d5;
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mobile-menu__container {
