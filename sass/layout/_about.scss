@@ -3,6 +3,17 @@
   display: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about-section {
     display: block;

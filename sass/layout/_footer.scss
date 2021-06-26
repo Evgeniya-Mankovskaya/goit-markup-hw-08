@@ -1,4 +1,5 @@
 footer {
+  display: flex;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -6,9 +7,22 @@ footer {
 .footer-container {
   display: flex;
   align-items: baseline;
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
 .contact-footer {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .add-link {
@@ -23,7 +37,18 @@ footer {
 }
 
 .footer-logo {
+  font-family: Raleway, serif;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.logo-web {
+  color: var(--accent-color);
 }
 .logo-studio-footer {
   color: var(--first-color);
@@ -40,6 +65,12 @@ footer {
   transition: color var(--timing-function) var(--duration);
 }
 
+.join-container {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
 .join-title {
   font-style: normal;
   font-weight: 700;
@@ -52,7 +83,12 @@ footer {
 
 .join-list {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 .join-footer-link {
   display: flex;
   justify-content: center;
@@ -69,14 +105,6 @@ footer {
   }
 }
 
-.join-icon {
-  fill: #ffffff;
-  width: 20px;
-  height: 20px;
-}
-.footer-email-input {
-  margin-left: 74px;
-}
 .footer-input-title {
   font-style: normal;
   text-transform: uppercase;
@@ -88,13 +116,17 @@ footer {
   margin-bottom: 20px;
 }
 .footer-form-input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   color: var(--first-color);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer-form-btn {
   display: inline-flex;
@@ -125,4 +157,16 @@ footer {
   height: 24px;
   right: 28px;
   bottom: 13px;
+}
+
+.join-icon {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email-input {
+    margin-left: 74px;
+  }
 }
