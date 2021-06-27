@@ -11,6 +11,11 @@
     pointer-events: none;
     background-color: var(--first-color);
 
+    &__connect-list {
+      position: absolute;
+      bottom: 0;
+    }
+
     &__container {
       position: relative;
       padding-top: 48px;
@@ -58,7 +63,7 @@
       }
     }
     &__contact-list {
-      margin-top: 306px;
+      // margin-top: 306px;
       margin-bottom: 34px;
     }
     &__contact-link-tel {
@@ -68,12 +73,7 @@
       font-size: 34px;
       line-height: 1.17;
       letter-spacing: 0.02em;
-      color: var(--second-color);
-      transition: color var(--duration) var(--timing-function);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
+      color: var(--accent-color);
     }
     &__contact-link-mail {
       font-weight: 500;

@@ -19,7 +19,6 @@ footer {
   }
 }
 .contact-footer {
-  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -168,5 +167,13 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer-email-input {
     margin-left: 74px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-email-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

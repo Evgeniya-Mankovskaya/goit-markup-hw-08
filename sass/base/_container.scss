@@ -4,11 +4,17 @@
   padding-right: 15px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 479px) {
+  .container {
+    height: 100%;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin: 0 auto;
+    height: 100%;
   }
 }
 
